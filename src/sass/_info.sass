@@ -1,0 +1,162 @@
+.main
+	.product
+		.info
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			max-height: 470px
+			margin: 7px 0 0 8px
+			&_recomend
+				max-width: 300px
+				i
+					color: #2CB84A
+					margin-right: 7px
+				span
+					font-size: 14px
+					&:nth-child(3)
+						color: #2F80ED
+				strong
+					display: inline-block
+					margin-top: 5px
+				&_polarity
+					display: flex
+					margin: 5px 0
+					width: 233px
+					border: 1px solid #A9A6AE
+					border-radius: 4px
+					a
+						color: #000000
+						font-weight: bold
+						font-size: 13px
+						padding: 6px 14px
+					.direct
+						border-right: 1px solid #A9A6AE
+						padding: 2px 0
+					.reverse
+						padding: 2px 0
+				.all_opt
+					a	
+						display: block
+						margin-top: 10px
+						color: #2F80ED
+						font-size: 14px
+			&_options
+				max-width: 300px
+				a
+					display: block
+					margin-top: 10px
+					color: #2F80ED
+					font-size: 14px	
+				&_title
+					margin-top: 15px
+					font-size: 16px
+					font-weight: bold
+				&_item
+					margin-top: 10px
+					display: flex
+					justify-content: space-between
+					font-size: 14px
+					color: #828282
+					.key
+					.value
+						color: #000000
+						i
+							color: #2F80ED
+							margin-left: 5px
+			&_buy
+				max-width: 300px
+				background-color: #EEEEEE
+				border-radius: 6px
+				padding: 20px 16px 25px 16px
+				margin-left: 32px
+				.old
+					display: flex
+					justify-content: space-between
+					&_price
+						position: relative
+						color: #828282
+						font-weight: bold
+						font-size: 14px 
+						&::before
+							content: ""
+							display: block
+							position: absolute
+							top: 50%
+							left: 0
+							transform: translateY(-50%)
+							height: 2px
+							width: 100%
+							background-color: #CC0000
+						i
+							padding-left: 3px
+					&_bonus
+						font-size: 12px
+						padding: 1px 6px
+						background-color: #2CB84A
+						color: #ffffff
+						border-radius: 4px
+						i
+							padding-left: 3px
+				.with, .without
+					font-weight: bold
+					font-size: 24px
+					i
+						transform: scale(0.8)
+					span
+						color: #828282
+						font-size: 14px
+						font-weight: normal
+				.line
+					margin-top: 15px
+					width: 100%
+					height: 2px
+					background-color: #C4C4C4
+				.condition
+					margin-top: 16px
+					&_item
+						margin-top: 7px
+						color: #333333
+						font-size: 14px
+						img
+							padding: 0 8px 2px 0
+						i
+							color: #2F80ED
+				.add_btn
+					margin-top: 21px
+					padding: 11px 62px
+					width: 100%
+					color: #fff
+					background-color: #CC0000
+					font-weight: bold
+					font-size: 14px
+					border-radius: 4px 
+					border: none
+					outline: none
+			&_delivery
+				max-width: 300px
+				margin: 15px 0 0 32px
+				.title
+					font-weight: bold
+					font-size: 16px
+				.pick-up
+					margin-top: 10px
+					font-size: 14px
+					span
+						color: #2F80ED
+				.date
+					display: flex
+					justify-content: space-between
+					span
+						display: block
+						color: #2CB84A
+						font-weight: bold
+						font-size: 14px
+				.deliv
+					margin-top: 10px
+					font-size: 14px
+					span
+						&:first-child
+							color: #2F80ED
+						&:last-child
+							color:  #2CB84A
+							font-weight: bold
