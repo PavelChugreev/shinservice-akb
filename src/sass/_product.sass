@@ -23,12 +23,14 @@
 					padding: 12px 10px
 					border: 1px solid #333333
 					border-radius: 4px
+					cursor: pointer
 					img
 						width: 60px
 				&_brand
 					width: 77px
 			&_img
 				padding: 22px 0
+				cursor: pointer
 				img
 					width: 100%
 		&_title
@@ -82,3 +84,23 @@
 					font-size: 14px
 					border: 1px solid #CC0000
 					border-radius: 3px
+.modal_window
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100vh
+	background-color: rgba(0, 0, 0, 0.4)
+	overflow: hidden
+	&_close
+		position: fixed
+		top: 0
+		right: 20px
+		font-size: 50px
+		i
+			cursor: pointer
+	img
+		display: block
+		max-width: 600px
+		height: 80vh
+		margin: 10vh auto 0 auto
