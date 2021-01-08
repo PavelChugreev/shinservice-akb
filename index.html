@@ -193,7 +193,7 @@
 										<!-- <div class="dots">....................................</div> -->
 										<div class="value">EFB<i class="far fa-question-circle"></i></div>
 									</div>
-									<a href="#">Все характеристики</a>
+									<a class="all_parametrs" href="#options">Все характеристики</a>
 								</div>
 								<div class="info_buy">
 									<div class="old">
@@ -227,13 +227,13 @@
 								</div>
 								<div class="info_delivery">
 									<div class="title">Способы получения</div>
-									<div class="pick-up"><span>Самовывоз</span> из 30 магазинов в Москве и области:</div>
+									<div class="pick-up deliv_link"><a href="#options">Самовывоз</a> из 30 магазинов в Москве и области:</div>
 									<div class="date">
 										<span>Сегодня</span>
 										<span>8 шт</span>
 									</div>
-									<div class="deliv">
-										<span>Доставка</span>
+									<div class="deliv deliv_link">
+										<a href="#options">Доставка</a>
 										<span>по Москве и области</span>
 										<span>бесплатно</span>
 									</div>
@@ -243,21 +243,21 @@
 					</div>
 				</div>
 			</section>
-			<section class="options">
+			<section class="options" id="options">
 				<div class="container">
 					<div class="options_menu">
 						<ul>
-							<li><a href="#">Наличие</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Характеристики</a></li>
-							<li><a href="#">Описание</a></li>
-							<li><a href="#">Аналоги</a></li>
+							<li class="options_menu_availability"><a  href="#options">Наличие</a></li>
+							<li class="options_menu_delivery"><a  href="#options">Доставка</a></li>
+							<li class="options_menu_parametrs"><a href="#options">Характеристики</a></li>
+							<li class="options_menu_description"><a class="active" href="#options">Описание</a></li>
+							<li class="options_menu_analog"><a href="#options">Аналоги</a></li>
 						</ul>
 					</div>
 					<div class="options_content">
-						<div class="options_content_title">Бесплатная доставка по Москве и области</div>
-						<div class="options_content_availability"></div>
-						<div class="options_content_delivery" style="display: none;">
+						<div class="options_content_title"></div>
+						<div class="content_block options_content_availability"></div>
+						<div class="content_block options_content_delivery">
 								<div class="options_content_delivery_item">
 								<div class="region">Доставка в пределах МКАД</div>
 								<div class="inf">
@@ -331,7 +331,7 @@
 								<div class="price">Бесплатно</div>
 							</div>
 						</div>
-						<div class="options_content_parametrs">
+						<div class="content_block options_content_parametrs">
 							<div class="options_content_parametrs_item">
 								<div class="key">Бренд</div>
 								<div class="value">Topla</div>
@@ -389,38 +389,38 @@
 								<div class="value">EFB<i class="far fa-question-circle"></i></div>
 							</div>
 						</div>
-						<div class="options_content_section description"></div>
-						<div class="options_content_section analog"></div>
+						<div class="content_block options_content_description"></div>
+						<div class="content_block options_content_analog"></div>
 					</div>
 				</div>
 			</section>
-			<footer class="footer">
-				<div class="container">
-					<div class="footer_wrapper">
-						<div class="footer_wrapper_about"><a href="#">2002—2020 © ООО «ШИНСЕРВИС»</a></div>
-						<div class="footer_wrapper_description">ШИНСЕРВИС — автомобильные шины (зимние и летние шины), колесные диски, шиномонтаж и хранение шин.</div>
-						<div class="footer_wrapper_social">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-vk"></i></a>
-							<a href="#"><i class="fab fa-odnoklassniki"></i></a>
-							<a href="#"><i class="fab fa-youtube"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-						</div>
-						<div class="footer_wrapper_contacts">
-							<a href="#">Магазины</a>
-							<a href="#">Контакты</a>
-						</div>
-						<div class="footer_wrapper_search">
-							<div class="footer_wrapper_search_input">
-								<input type="search" placeholder="Поиск по коду товара" name="" id="">
-								<button type="submit"><i class="fas fa-search"></i></button>
-							</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer_wrapper">
+					<div class="footer_wrapper_about"><a href="#">2002—2020 © ООО «ШИНСЕРВИС»</a></div>
+					<div class="footer_wrapper_description">ШИНСЕРВИС — автомобильные шины (зимние и летние шины), колесные диски, шиномонтаж и хранение шин.</div>
+					<div class="footer_wrapper_social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-vk"></i></a>
+						<a href="#"><i class="fab fa-odnoklassniki"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div class="footer_wrapper_contacts">
+						<a href="#">Магазины</a>
+						<a href="#">Контакты</a>
+					</div>
+					<div class="footer_wrapper_search">
+						<div class="footer_wrapper_search_input">
+							<input type="search" placeholder="Поиск по коду товара" name="" id="">
+							<button type="submit"><i class="fas fa-search"></i></button>
 						</div>
 					</div>
 				</div>
-			</footer>
-		</section>
+			</div>
+		</footer>
 	</div>
-	
+	<script src="src/js/script.js"></script>
 </body>
 </html>
