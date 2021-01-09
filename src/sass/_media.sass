@@ -1,82 +1,239 @@
 @media (max-width: 1200px)
-    .main
-        .product
-            &_title
-                &_text
-                    font-size: 18px
-            &_photo
-                flex-direction: column-reverse
-                &_preview
-                    flex-direction: row-reverse
-    .footer
-        &_wrapper
-            &_search
-                &_input
-                    width: 60%
+	.main
+		.product
+			&_title
+				&_text
+					font-size: 18px
+			&_photo
+				flex-direction: column-reverse
+				&_preview
+					flex-direction: row-reverse
+	.footer
+		&_wrapper
+			&_search
+				&_input
+					width: 60%
 
 @media (max-width: 991px)
-    .header
-        &_desktop
-            &_bottom
-                .logo
-                    img
-                        max-width: 200px
-    .main
-        .breadcrumbs
-            white-space: nowrap
-            overflow-x: auto
-            overflow-y: hidden
-        .product
-            &_title_mobile
-                display: flex
-                flex-direction: column-reverse
-            &_title
-                display: none
-                &_text
-                    font-size: 22px
-            &_photo
-                margin-top: 15px
-                flex-direction: row
-                &_preview
-                    flex-direction: column
-                    &_brand
-                        display: none
-                &_img
-                    width: 100%
-                    img
-                        display: block
-                        max-width: 300px
-                        margin: 0 auto
-        .options
-            &_menu
-                ul
-                    justify-content: space-around
-            &_content
-                &_title
-                    font-size: 17px
-                &_delivery
-                    &_item
-                        .inf
-                            width: 40%
-                        .price
-                            width: 20%
-                &_parametrs
-                    &_item
-                        .key, .value
-                            font-size: 13px
-    .footer
-        &_wrapper
-            max-height: 400px
-            align-items: center 
-            width: auto
-            text-align: center
-            &_description
-                width: 61%
-            &_contacts
-                margin-top: 40px
-                text-align: center
-            &_search
-                margin-top: 30px
-                width: 100%
-                text-align: center
-                            
+	.header
+		&_desktop
+			&_bottom
+				.logo
+					img
+						max-width: 200px
+	.main
+		.breadcrumbs
+			white-space: nowrap
+			overflow-x: auto
+			overflow-y: hidden
+		.product
+			&_title_mobile
+				display: flex
+				flex-direction: column-reverse
+			&_title
+				display: none
+				&_text
+					font-size: 22px
+			&_photo
+				margin-top: 15px
+				flex-direction: row
+				&_preview
+					flex-direction: column
+					&_brand
+						display: none
+				&_img
+					width: 100%
+					img
+						display: block
+						max-width: 300px
+						margin: 0 auto
+		.options
+			&_menu
+				ul
+					justify-content: space-around
+			&_content
+				&_title
+					font-size: 17px
+				&_delivery
+					&_item
+						.inf
+							width: 40%
+						.price
+							width: 20%
+				&_parametrs
+					&_item
+						.key, .value
+							font-size: 13px
+	.footer
+		&_wrapper
+			max-height: 400px
+			align-items: center 
+			width: auto
+			text-align: center
+			&_description
+				width: 61%
+			&_social
+				width: 100%
+			&_contacts
+				margin-top: 40px
+				text-align: center
+			&_search
+				margin-top: 30px
+				width: 100%
+				text-align: center
+
+@media (max-width: 767px)
+	.header
+		&_desktop
+			&_top
+				display: none
+			&_bottom
+				.hamburger
+					display: inline-block
+				.logo
+					img
+						max-width: 180px
+						margin-left: 32px
+				.phone
+					padding: 10px 0 0 0 
+					&_number
+						display: none
+					&_icon, .user
+						display: inline-block
+						transform: scale(1.7)
+						padding: 0 10px 
+				.cart
+					padding: 10px 5px 0 0
+					a
+						span
+							display: none
+						i
+							padding-right: 10px
+					
+				.menu
+					ul
+						overflow-x: auto
+						overflow-y: hidden
+						li
+							a
+								font-size: 13px
+	.main
+		.options
+			&_menu
+				ul
+					li
+						a
+							font-size: 14px
+			&_content
+				&_delivery
+					&_item
+						.region
+							font-size: 13px
+						.inf
+							&_date
+								font-size: 13px
+							&_count
+								font-size: 12px
+						.price
+							font-size: 13px
+				&_parametrs
+					max-height: 290px
+	.footer
+		&_wrapper
+			max-height: 1000px
+			&_description
+				width: 85%
+			&_contacts
+				display: flex
+				justify-content: space-around
+
+@media (max-width: 576px)
+	.header
+		&_desktop
+			&_bottom
+				.logo
+					img
+						margin-left: 0px
+				.phone
+					&_icon, .user
+						transform: scale(1.4)
+				.sub_menu
+					overflow-x: auto
+					overflow-y: hidden
+	.main
+		.product
+			margin-top: 0
+			&_title
+				&_text
+					font-size: 19px
+			&_photo
+				flex-direction: column-reverse
+				&_img
+					.add_to_cart
+						display: block
+				&_preview
+					flex-direction: row
+					img
+						width: 40px
+			.info
+				flex-wrap: nowrap
+				max-height: 1000px
+				&_recomend, &_parametrs, &_buy, &_delivery
+					max-width: 100%
+					margin-left: 0
+				&_parametrs
+					order: 4
+				&_buy
+					margin-top: 20px
+		.options
+			padding-bottom: 31px
+			&_menu
+				ul
+					overflow-x: auto
+					overflow-y: hidden
+					justify-content: start
+			&_content
+				&_title
+					margin-bottom: 0
+				&_delivery
+					&_item
+						display: block
+						padding: 10px 0 20px 0
+						.region, .inf, .price
+							width: 100%
+							margin-top: 11px
+						.price
+							text-align: left
+				&_parametrs
+					max-height: 1000px
+					&_item
+						width: 100%
+						.value
+							width: 40%
+	.footer
+		&_wrapper
+			&_about, &_description, &_search_input
+				width: 100%
+
+@media (max-width: 425px)
+	.header
+		.cart
+			padding: 10px 30px 0 0
+		.logo
+			img
+				max-width: 180px
+@media (max-width: 375px)
+	.header
+		.cart
+			padding: 10px 20px 0 0
+		.logo
+			img
+				max-width: 150px
+@media (max-width: 320px)
+	.header
+		.cart
+			padding: 10px 10px 0 0
+		.logo
+			img
+				max-width: 120px
+
