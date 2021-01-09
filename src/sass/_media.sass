@@ -1,0 +1,82 @@
+@media (max-width: 1200px)
+    .main
+        .product
+            &_title
+                &_text
+                    font-size: 18px
+            &_photo
+                flex-direction: column-reverse
+                &_preview
+                    flex-direction: row-reverse
+    .footer
+        &_wrapper
+            &_search
+                &_input
+                    width: 60%
+
+@media (max-width: 991px)
+    .header
+        &_desktop
+            &_bottom
+                .logo
+                    img
+                        max-width: 200px
+    .main
+        .breadcrumbs
+            white-space: nowrap
+            overflow-x: auto
+            overflow-y: hidden
+        .product
+            &_title_mobile
+                display: flex
+                flex-direction: column-reverse
+            &_title
+                display: none
+                &_text
+                    font-size: 22px
+            &_photo
+                margin-top: 15px
+                flex-direction: row
+                &_preview
+                    flex-direction: column
+                    &_brand
+                        display: none
+                &_img
+                    width: 100%
+                    img
+                        display: block
+                        max-width: 300px
+                        margin: 0 auto
+        .options
+            &_menu
+                ul
+                    justify-content: space-around
+            &_content
+                &_title
+                    font-size: 17px
+                &_delivery
+                    &_item
+                        .inf
+                            width: 40%
+                        .price
+                            width: 20%
+                &_parametrs
+                    &_item
+                        .key, .value
+                            font-size: 13px
+    .footer
+        &_wrapper
+            max-height: 400px
+            align-items: center 
+            width: auto
+            text-align: center
+            &_description
+                width: 61%
+            &_contacts
+                margin-top: 40px
+                text-align: center
+            &_search
+                margin-top: 30px
+                width: 100%
+                text-align: center
+                            
