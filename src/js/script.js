@@ -73,3 +73,16 @@ preview.addEventListener("click", openModal);
 closeModalBtn.addEventListener("click", closeModal);
 modal.addEventListener("click", (e) => e.target === modal ? closeModal(): null);
 document.addEventListener("keydown", (e) => e.code === "Escape" ? closeModal() : null );
+
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".header_mobile");
+const closeMenulBtn = document.querySelector(".header_mobile_title")
+
+hamburger.addEventListener("click", () =>{
+    document.querySelector("body").classList.add("body_freeze");
+    mobileMenu.classList.add("show_mobile");
+});
+closeMenulBtn.addEventListener("click", () => {
+    document.querySelector("body").classList.remove("body_freeze");
+    mobileMenu.classList.remove("show_mobile");
+});
