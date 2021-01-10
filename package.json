@@ -1,0 +1,24 @@
+{
+  "name": "shinservice-akb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelChugreev/shinservice-akb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelChugreev/shinservice-akb/issues"
+  },
+  "homepage": "https://github.com/PavelChugreev/shinservice-akb#readme",
+  "devDependencies": {
+    "webpack": "^5.12.2",
+    "webpack-cli": "^4.3.1"
+  }
+}
