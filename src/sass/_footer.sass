@@ -1,16 +1,14 @@
 .footer
 	background-color: #EEEEEE
 	&_wrapper
-		display: flex
-		flex-direction: column
-		flex-wrap: wrap
+		@include flex_col_wrap
 		max-height: 240px
 		padding: 31px 0 47px 0 
 		&_about
 			width: 50%
 			a
 				padding: 5px 0
-				color: #2F80ED
+				color: $blue_color
 				font-size: 14px
 		&_description
 			width: 50%
@@ -26,9 +24,10 @@
 		&_contacts
 			width: 50%
 			text-align: right
+			font-size: 14px
 			a
 				padding: 5px 0
-				color: #2F80ED
+				color: $blue_color
 				&:first-child
 					margin-right: 30px
 		&_search
@@ -39,16 +38,14 @@
 				display: inline-block
 				width: 50%
 				padding: 9px 10px
-				background-color: #fff
+				background-color: $white_color
 				text-align: left
 				border-radius: 4px
 				input
 					width: 86%
-					border: none
-					outline: none
+					@include no_border
 				button
-					border: none
-					outline: none
-					background-color: #fff
+					@include no_border
+					background-color: $white_color
 					i
-						color: #A9A6AE
+						color: $grey_color

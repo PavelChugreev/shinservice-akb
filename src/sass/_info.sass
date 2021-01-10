@@ -1,20 +1,18 @@
 .main
 	.product
 		.info
-			display: flex
-			flex-direction: column
-			flex-wrap: wrap
+			@include flex_col_wrap
 			max-height: 520px
 			margin: 7px 0 0 8px
 			&_recomend
 				max-width: 47%
 				i
-					color: #2CB84A
+					color: $green_color
 					margin-right: 7px
 				span
 					font-size: 14px
 					&:nth-child(3)
-						color: #2F80ED
+						color: $blue_color
 				strong
 					display: inline-block
 					margin-top: 5px
@@ -22,15 +20,15 @@
 					display: flex
 					margin: 5px 0
 					width: 233px
-					border: 1px solid #A9A6AE
+					border: 1px solid $grey_color
 					border-radius: 4px
 					a
-						color: #000000
+						color: $black_color
 						font-weight: bold
 						font-size: 13px
 						padding: 6px 14px
 					.direct
-						border-right: 1px solid #A9A6AE
+						border-right: 1px solid $grey_color
 						padding: 2px 0
 					.reverse
 						padding: 2px 0
@@ -38,46 +36,43 @@
 					a	
 						display: block
 						margin-top: 10px
-						color: #2F80ED
+						color: $blue_color
 						font-size: 14px
 			&_parametrs
 				max-width: 47%
 				a
 					display: block
 					margin-top: 10px
-					color: #2F80ED
+					color: $blue_color
 					font-size: 14px	
 				&_title
 					margin-top: 15px
 					font-size: 16px
 					font-weight: bold
 				&_item
+					@include flex_between
 					margin-top: 10px
-					display: flex
-					justify-content: space-between
 					font-size: 14px
-					color: #828282
+					color: $dark_grey_color
 					.key
 					.value
-						color: #333333
+						color: $black_color
 						font-size: 14px
 						i
-							color: #2F80ED
+							color: $blue_color
 							margin-left: 5px
 			&_buy
 				max-width: 47%
-				background-color: #EEEEEE
+				background-color: $white_color
 				border-radius: 6px
 				padding: 20px 16px 25px 16px
 				margin-left: 32px
 				.old
-					display: flex
-					justify-content: space-between
+					@include flex_between
 					&_price
 						position: relative
-						color: #828282
-						font-weight: bold
-						font-size: 14px 
+						color: $dark_grey_color
+						@include bold_14
 						&::before
 							content: ""
 							display: block
@@ -87,14 +82,14 @@
 							transform: translateY(-50%)
 							height: 2px
 							width: 100%
-							background-color: #CC0000
+							background-color: $red_color
 						i
 							padding-left: 3px
 					&_bonus
 						font-size: 12px
 						padding: 1px 6px
-						background-color: #2CB84A
-						color: #ffffff
+						background-color: $green_color
+						color: $white_color
 						border-radius: 4px
 						i
 							padding-left: 3px
@@ -104,35 +99,33 @@
 					i
 						transform: scale(0.8)
 					span
-						color: #828282
+						color: $dark_grey_color
 						font-size: 14px
 						font-weight: normal
 				.line
 					margin-top: 15px
 					width: 100%
 					height: 2px
-					background-color: #C4C4C4
+					background-color: $grey_color
 				.condition
 					margin-top: 16px
 					&_item
 						margin-top: 7px
-						color: #333333
+						color: $black_color
 						font-size: 14px
 						img
 							padding: 0 8px 2px 0
 						i
-							color: #2F80ED
+							color: $blue_color
 				.add_btn
 					margin-top: 21px
 					padding: 11px 0
 					width: 100%
-					color: #fff
-					background-color: #CC0000
-					font-weight: bold
-					font-size: 14px
+					color: $white_color
+					background-color: $red_color
 					border-radius: 4px 
-					border: none
-					outline: none
+					@include no_border
+					@include bold_14
 			&_delivery
 				max-width: 47%
 				margin: 15px 0 0 32px
@@ -144,22 +137,20 @@
 					font-size: 14px
 					a
 						padding: 5px 0
-						color: #2F80ED
+						color: $blue_color
 				.date
-					display: flex
-					justify-content: space-between
+					@include flex_between
 					span
+						@include bold_14
 						display: block
-						color: #2CB84A
-						font-weight: bold
-						font-size: 14px
+						color: $green_color
 				.deliv
 					margin-top: 10px
 					font-size: 14px
 					a
 							padding: 5px 0
-							color: #2F80ED
+							color: $blue_color
 					span
 						&:last-child
-							color:  #2CB84A
+							color:  $green_color
 							font-weight: bold

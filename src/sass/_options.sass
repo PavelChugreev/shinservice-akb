@@ -7,71 +7,62 @@
 				padding-left: 0
 				margin-bottom: 0
 				display: flex
-				list-style: none
 				li
 					a
 						font-weight: bold
 						font-size: 16px
 						margin-right: 30px
 						padding: 10px 0
-						color: #333333
+						color: $black_color
 						&:hover
-							border-bottom: 3px solid  #CC0000
+							border-bottom: 3px solid $red_color
 		&_content
 			margin-top: 20px
 			&_title
 				margin-bottom: 10px
 				font-weight: bold
 				font-size: 20px
-				color: #333333
+				color: $black_color
 			i
-				color: #2F80ED
+				color: $blue_color
 			&_delivery
 				&_item
+					@include flex_between
 					padding: 21px 0
-					border-bottom: 1px solid #EEEEEE
-					display: flex
-					justify-content: space-between
+					border-bottom: 1px solid $white_color
 					.region
+						@include bold_14
 						width: 40%
-						font-weight: bold
-						font-size: 14px
-						color: #333333
+						color: $black_color
 					.inf
+						@include flex_between
 						width: 30%
-						display: flex
-						justify-content: space-between
 						&_date
 							width: 50%
 							font-size: 14px
 						&_count
+							@include bold_14
 							width: 50%
-							font-weight: bold
-							font-size: 14px
 					.price
+						@include bold_14
 						width: 30%
-						font-size: 14px
-						font-weight: bold
-						color: #2CB84A
+						color: $green_color
 						text-align: right
 			&_parametrs
-				display: flex
-				flex-direction: column
-				flex-wrap: wrap
+				@include flex_col_wrap
 				max-height: 260px
 				&_item
+					@include flex_between
 					margin-top: 15px
-					display: flex
-					justify-content: space-between
 					width: 50%
 					.key
 						width: 50%
 						font-size: 14px
-						color: #828282
+						color: $dark_grey_color
 					.value
 						width: 50%
 						font-size: 14px
-						color: #333333
+						color: $black_color
 
 
 

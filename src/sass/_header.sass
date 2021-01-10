@@ -1,31 +1,21 @@
 .header
 	position: relative
 	&_mobile
-		position: fixed
-		top: 0
-		left: -100%
-		padding: 20px
-		width: 100%
-		height: 100vh
-		color: #fff
-		background-color: rgba(0, 0, 0, 0.95)
-		z-index: 99
-		transition: 0.5s all
+		@include drop_menu
 		a
 			display: inline-block
-			color: #fff
+			color: $white_color
 			padding: 10px 0
 			width: 100%
 		&_title
-			display: flex
-			justify-content: space-between
+			@include flex_between
 			font-size: 30px
 			i
 				padding: 10px
 		&_region
 			margin-top: 15px
 			i
-				color: #CC0000
+				color: $red_color
 				padding-right: 7px
 		&_order_status
 			margin-top: 15px
@@ -34,29 +24,18 @@
 			ul
 				li
 					margin-top: 15px
-					border-bottom: 1px solid #fff
+					border-bottom: 1px solid $white_color
 	&_contacts
-		position: fixed
-		top: 0
-		left: -100%
-		padding: 20px
-		width: 100%
-		height: 100vh
-		color: #fff
-		background-color: rgba(0, 0, 0, 0.95)
-		z-index: 99
-		transition: 0.5s all
+		@include drop_menu
 		&_title
-			display: flex
-			justify-content: space-between
+			@include flex_between
 			font-size: 30px
 			margin-bottom: 15px
 			i
 				padding: 10px
 		&_item
-			display: flex
-			justify-content: space-between
-			border-bottom: 1px solid #fff
+			@include flex_between
+			border-bottom: 1px solid $white_color
 			padding: 15px 0
 			font-size: 22px
 			.sub_number
@@ -73,9 +52,9 @@
 						margin-right: 25px
 						padding: 10px 0
 						&:hover
-							color: #CC0000
+							color: $red_color
 						i
-							color: #CC0000
+							color: $red_color
 							padding-right: 7px
 			.order_status
 				text-align: end
@@ -115,34 +94,35 @@
 				ul
 					margin-bottom: 0
 					display: flex
-					list-style: none
 					li
 						a
 							font-weight: bold
 							font-size: 16px
 							margin-right: 40px
 							padding: 10px 0
-							color: #333333
+							color: $black_color
 							&:hover
-								border-bottom: 3px solid  #CC0000
+								border-bottom: 3px solid  $red_color
 			.sub_menu
 				margin-top: 10px
 				padding: 10px 0
-				background-color: #EEEEEE
+				background-color: $white_color
 				&_wrapper
 					display: inline-block
-					border: 1px solid #A9A6AE
+					border: 1px solid $grey_color
 					border-radius: 5px
 					ul
 						margin-bottom: 0
 						display: flex
-						list-style: none
 						li
-							border-right: 1px solid #A9A6AE
+							border-right: 1px solid $grey_color
 							padding: 3px 14px
-							background-color: #fff
+							background-color: $white_color
+							&:first-child
+								border-radius: 5px 0 0 5px
 							&:last-child
 								border-right: none
+								border-radius: 0 5px 5px 0 
 							a
 								font-weight: bold
 								font-size: 14px
