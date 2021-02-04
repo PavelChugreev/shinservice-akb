@@ -6,12 +6,13 @@
 			margin: 7px 0 0 8px
 			&_recomend
 				max-width: 47%
-				i
-					color: $green_color
-					margin-right: 7px
 				span
 					font-size: 14px
-					&:nth-child(3)
+					&:first-child
+						background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='8' fill='%232CB84A'/%3E%3Crect x='7' y='3' width='2' height='2' rx='0.8' fill='white'/%3E%3Crect x='7' y='6' width='2' height='7' rx='0.8' fill='white'/%3E%3Crect x='6' y='6' width='3' height='2' rx='0.8' fill='white'/%3E%3C/svg%3E") no-repeat;
+					padding-left: 20px
+					&:nth-child(2)
+						display: block
 						color: $blue_color
 				strong
 					display: inline-block
@@ -59,9 +60,6 @@
 					.value
 						color: $black_color
 						font-size: 14px
-						i
-							color: $blue_color
-							margin-left: 5px
 			&_buy
 				max-width: 47%
 				background-color: #EEEEEE
@@ -71,6 +69,8 @@
 				.old
 					@include flex_between
 					&_price
+						background: url("data:image/svg+xml,%3Csvg width='13' height='13' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='ruble-sign' class='svg-inline--fa fa-ruble-sign fa-w-12' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23828282' d='M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z'%3E%3C/path%3E%3C/svg%3E") no-repeat right;
+						padding-right: 13px
 						position: relative
 						color: $dark_grey_color
 						@include bold_14
@@ -84,21 +84,16 @@
 							height: 2px
 							width: 100%
 							background-color: $red_color
-						i
-							padding-left: 3px
 					&_bonus
+						background: url("data:image/svg+xml,%3Csvg width='13' height='13' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='ruble-sign' class='svg-inline--fa fa-ruble-sign fa-w-12' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23fff' d='M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z'%3E%3C/path%3E%3C/svg%3E") no-repeat right;
 						font-size: 12px
-						padding: 1px 6px
+						padding: 2px 14px 0 6px
 						background-color: $green_color
 						color: $white_color
 						border-radius: 4px
-						i
-							padding-left: 3px
 				.with, .without
 					font-weight: bold
 					font-size: 24px
-					i
-						transform: scale(0.8)
 					span
 						color: $dark_grey_color
 						font-size: 14px
@@ -112,12 +107,17 @@
 					margin-top: 16px
 					&_item
 						margin-top: 7px
+						padding-left: 23px
 						color: $black_color
 						font-size: 14px
 						img
 							padding: 0 8px 2px 0
-						i
-							color: $blue_color
+					.sale
+						background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='2' y='2' width='16' height='16' rx='8' fill='%23CC0000'/%3E%3Crect x='11.0001' y='15.0001' width='2' height='2' rx='0.8' transform='rotate(-180 11.0001 15.0001)' fill='white'/%3E%3Crect x='11.0009' y='11.9999' width='2' height='7' rx='0.8' transform='rotate(-180 11.0009 11.9999)' fill='white'/%3E%3C/svg%3E") no-repeat
+					.garanty
+						background: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.72744 18H8.21854C8.30039 18 8.30039 18 8.38224 17.9181C10.1829 17.3447 11.6562 16.4437 12.7203 15.3788C13.7025 14.4778 14.4391 13.3311 14.9302 12.0205C15.7624 9.82501 15.7555 7.41963 15.7497 5.38637C15.7492 5.21972 15.7487 5.05553 15.7487 4.8942V4.32082C15.7487 3.33788 14.9302 2.51877 13.8662 2.43686C11.7381 2.35495 10.1011 1.61775 8.70964 0.307167C8.21854 -0.102389 7.56374 -0.102389 7.07264 0.307167C5.68118 1.61775 4.04418 2.35495 1.91608 2.43686C0.933881 2.51877 0.11538 3.33788 0.0335304 4.32082V4.8942C-0.0483202 7.02389 -0.0483175 9.64505 0.852034 12.0205C1.34313 13.3311 2.07978 14.4778 3.06198 15.3788C4.20788 16.4437 5.68118 17.2628 7.40004 17.9181C7.49593 17.9181 7.56374 17.9462 7.61991 17.9695C7.65963 17.9859 7.69354 18 7.72744 18ZM6.74524 11.8567C6.49969 11.8567 6.33599 11.7747 6.17229 11.6109L4.69899 10.2184C4.37158 9.89079 4.37158 9.39932 4.69899 9.07167C5.02638 8.74403 5.51749 8.74403 5.84489 9.07167L6.74524 9.89079L9.93738 6.77816C10.2648 6.45051 10.7559 6.45051 11.0833 6.77816C11.4107 7.1058 11.4107 7.59727 11.0833 7.92491L9.20074 9.76792L7.31819 11.6109C7.15449 11.7747 6.99079 11.8567 6.74524 11.8567Z' fill='%232CB84A'/%3E%3C/svg%3E") no-repeat left center
+					.credit
+						background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='16' rx='8' fill='%23FAB600'/%3E%3Cpath d='M11.5714 7.28571H8.71427V3L4.42856 8.71429H7.2857V13L11.5714 7.28571Z' fill='white'/%3E%3C/svg%3E") no-repeat left center
 				.add_btn
 					margin-top: 21px
 					padding: 11px 0

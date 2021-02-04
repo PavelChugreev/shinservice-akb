@@ -10,13 +10,8 @@
 		&_title
 			@include flex_between
 			font-size: 30px
-			i
-				padding: 10px
 		&_region
 			margin-top: 15px
-			i
-				color: $red_color
-				padding-right: 7px
 		&_order_status
 			margin-top: 15px
 		nav
@@ -31,8 +26,6 @@
 			@include flex_between
 			font-size: 30px
 			margin-bottom: 15px
-			i
-				padding: 10px
 		&_item
 			@include flex_between
 			border-bottom: 1px solid $white_color
@@ -53,9 +46,6 @@
 						padding: 10px 0
 						&:hover
 							color: $red_color
-						i
-							color: $red_color
-							padding-right: 7px
 			.order_status
 				text-align: end
 				a
@@ -65,8 +55,6 @@
 			.hamburger
 				display: none
 				padding: 10px 20px 10px 0
-				i
-					transform: scale(1.7)
 			.logo
 				img
 					max-width: 225px
@@ -83,12 +71,16 @@
 				text-align: end
 				padding-top: 10px
 				a   
-					padding-top: 50%
+					padding-top: 0
+					display: inline-block
+					height: 24px
 					font-weight: bold
 					font-size: 14px
-					i
-						transform: scale(1.7)
-						padding-right: 17px
+					span
+						display: block
+					svg
+						padding-right: 18px
+						width: auto
 			.menu
 				margin-top: 4px
 				ul

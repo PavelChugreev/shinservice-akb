@@ -3,8 +3,8 @@ export default function mobile_menu(){
     const phoneBtn = document.querySelector(".phone_icon");
     const mobileMenu = document.querySelector(".header_mobile");
     const mobileContacts = document.querySelector(".header_contacts");
-    const closeMenulBtn = document.querySelector(".header_mobile_title i")
-    const closeContactslBtn = document.querySelector(".header_contacts_title i")
+    const closeMenulBtn = document.querySelector(".header_mobile_title svg")
+    const closeContactslBtn = document.querySelector(".header_contacts_title svg")
     
     function toggleDropMenus(dropEl, openBtn, closeBtn){
         openBtn.addEventListener("click", () =>{
